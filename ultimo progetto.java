@@ -21,8 +21,7 @@ public class NodoAlberoBinario {
     public void setLeftChild(NodoAlberoBinario psx){
         this.psx = psx;
     }
-
-    public NodoAlberoBinario getLeftChild {
+    public NodoAlberoBinario getLeftChild() {
         return psx;
     } 
 
@@ -43,7 +42,7 @@ public class AlberoBinario{
     }
 
     public void setRadice (NodoAlberoBinario Nodo){
-        ptr = nodo;
+        ptr = Nodo;
     }
 
     public NodoAlberoBinario getRadice(){
@@ -77,7 +76,7 @@ public class AlberoBinario{
             visitaDifferita (ptr);
         }
 
-        private void visitaSimmetrica(NodoAlberoBinario p){
+        private void visitaSimmetrica(NodoAlberoBinario p) {
             if (p==null)
             return;
             if (p.getLeftChild() !=null)
@@ -93,18 +92,18 @@ public class AlberoBinario{
         }
 
         public class nodoalberobinario {
-            private char inf;,
-            private NodoAlberoBinazio psx;
+            private char Info;
+            private NodoAlberoBinario psx;
             private NodoAlberoBinario pdx;
-            public NodoAlberoBinarto (chat info) {
-            this.info=Info:
+            public NodoAlberoBinario (chat Info) {
+            this.Info=Info;
             psx = null;
             pdx = null;
             }
-            public void setinfo (char info) {
-            this info = info;
+            public void setInfo (char info) {
+            this.info = info;
             }
-            public char getinfo() {
+            public char getInfo() {
             return info;
             }
             public void setleftchild (NodoAlberoBinario psx) {
@@ -114,14 +113,14 @@ public class AlberoBinario{
             return psx;
             }
             public void setRightChild (NodoAlberoBinario pdx) {
-            this.pdx = pdx:
+            this.pdx = pdx;
             }
             publlc NodoAlberoBinario getRightchild () {
             return pdx;
             }
             }
-            aggiungiNodo (n, p.getLeftChild());
-            else {// n.getInfo() >= p.getInfo()
+            aggiungiNodo (n, p.getLeftChild())
+            else {
             if (p.getRightChild() == null)
             p.setRightChild (n) ;
             else 
